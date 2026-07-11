@@ -1,1 +1,0 @@
-<?php echo password_hash("JayaDEwa1234", PASSWORD_DEFAULT); ?>
