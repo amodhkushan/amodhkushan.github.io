@@ -1,324 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amodh Kushan — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Amodh Kushan, a full stack developer building web, backend, and full-stack software solutions.">
 
-    <title>Amodh Kushan | Full Stack Developer</title>
+<link rel="icon" href="assets/images/logo.png" type="image/png">
 
-    <link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
-
-    <link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-    <div class="container">
-
-        <!-- NAVIGATION -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-2 mb-5 sticky-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#home"><img src="assets/images/logo.png" alt="Logo" width="70"></a>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item m-3">
-                            <a class="nav-link" aria-current="page" href="#home"><i class="bi bi-house-door"></i> Home</a>
-                        </li>
-                        <li class="nav-item m-3">
-                            <a class="nav-link" href="#projects"><i class="bi bi-file-earmark-code"></i> Projects</a>
-                        </li>
-                        <li class="nav-item m-3">
-                            <a class="nav-link" href="#services"><i class="bi bi-gear"></i> Services</a>
-                        </li>
-                        <li class="nav-item m-3">
-                            <a class="nav-link" href="#contact"><i class="bi bi-telephone"></i> Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- HOME -->
-        <section id="home">
-            <main class="container hero-section">
-                <div class="row w-100 align-items-center">
-
-                    <div class="col-lg-5 col-md-6 mb-5 mb-md-0 text-center">
-                        <div class="position-relative d-inline-block">
-                            <img src="assets/images/profilepic.png" class="profile-img rounded-5 shadow-sm" alt="Amodh Kushan">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7 col-md-6 px-lg-5">
-                        <div class="text-center text-md-start">
-                            <h1 class="display-1 fw-black mb-0">Full Stack</h1>
-                            <h1 class="display-1 fw-black mb-3" style="color: #b83e3e;">Developer</h1>
-
-                            <h2 class="h4 fw-light text-secondary mb-4">
-                                Building clean, scalable, and efficient software solutions
-                            </h2>
-
-                            <div>
-                                <a href="#projects" class="btn btn-lg fw-bold cta-btn btn-dark">
-                                    View Projects <i class="bi bi-arrow-right-short"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </main>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects" class="py-5">
-            <div class="container py-5">
-                <h2 class="display-4 fw-bold mb-5 text-center">My Projects</h2>
-
-                <!--
-                    EDIT ME: replace these three placeholder cards with your real projects.
-                    Duplicate a "col-md-4" block for each new project.
-                -->
-                <div class="row g-4">
-
-                    <div class="col-md-4">
-                        <div class="card h-100 rounded-4 shadow-sm">
-                            <img src="assets/images/caroimg1.png" class="card-img-top rounded-4 align-self-center mt-4" style="width: 350px; height: 200px; object-fit: cover;" alt="Project One">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Title One</h5>
-                                <h6 class="card-subtitle mb-2 text-muted fw-bold">Category</h6>
-                                <p class="card-text text-muted small">
-                                    Short description of this project goes here. Replace with your real project details.
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 pb-3">
-                                <a href="#" class="btn btn-outline-dark rounded-4 py-2 btn-sm w-100">View Project Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 rounded-4 shadow-sm">
-                            <img src="assets/images/caroimg2.png" class="card-img-top rounded-4 align-self-center mt-4" style="width: 350px; height: 200px; object-fit: cover;" alt="Project Two">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Title Two</h5>
-                                <h6 class="card-subtitle mb-2 text-muted fw-bold">Category</h6>
-                                <p class="card-text text-muted small">
-                                    Short description of this project goes here. Replace with your real project details.
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 pb-3">
-                                <a href="#" class="btn btn-outline-dark rounded-4 py-2 btn-sm w-100">View Project Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 rounded-4 shadow-sm">
-                            <img src="assets/images/caroimg3.png" class="card-img-top rounded-4 align-self-center mt-4" style="width: 350px; height: 200px; object-fit: cover;" alt="Project Three">
-                            <div class="card-body">
-                                <h5 class="card-title">Project Title Three</h5>
-                                <h6 class="card-subtitle mb-2 text-muted fw-bold">Category</h6>
-                                <p class="card-text text-muted small">
-                                    Short description of this project goes here. Replace with your real project details.
-                                </p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 pb-3">
-                                <a href="#" class="btn btn-outline-dark rounded-4 py-2 btn-sm w-100">View Project Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" class="py-5 bg-white rounded-5">
-            <div class="container py-5">
-                <h2 class="display-4 fw-bold mb-5 text-center">Services</h2>
-                <!-- EDIT ME: add service cards here, e.g. Web Development, Backend APIs, UI/UX, etc. -->
-                <div class="row g-4">
-                    <div class="col-md-4 text-center">
-                        <i class="bi bi-code-slash display-4 text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Web Development</h5>
-                        <p class="text-muted small">Custom, responsive websites built with modern frameworks.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <i class="bi bi-server display-4 text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Backend & APIs</h5>
-                        <p class="text-muted small">Scalable server-side systems and database design.</p>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <i class="bi bi-phone display-4 text-secondary mb-3"></i>
-                        <h5 class="fw-bold">Full Stack Solutions</h5>
-                        <p class="text-muted small">End-to-end product builds, from idea to deployment.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="py-5">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-12">
-                        <h1><b>Have a project, collaboration, or question? Let's connect.</b></h1>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-
-                    <div class="col-lg-4 col-md-4 my-2">
-                        <div class="row">
-                            <h5><b>Follow me on,</b></h5>
-                        </div>
-
-                        <div class="row d-flex justify-content-center align-items-center align-self-center">
-                            <div class="col-12 m-2">
-                                <a href="https://www.instagram.com/shehazz_me/" target="_blank" class="link-dark text-decoration-none">
-                                    <i class="bi bi-instagram m-3" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
-                                    <b style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Instagram</b>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center align-self-center">
-                            <div class="col-12 m-2">
-                                <a href="https://web.facebook.com/amodh.kushan.7/" target="_blank" class="link-dark text-decoration-none">
-                                    <i class="bi bi-facebook m-3 text-primary"></i>
-                                    <b class="text-primary">Facebook</b>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center align-self-center">
-                            <div class="col-12 m-2">
-                                <a href="https://x.com/maticdrops" target="_blank" class="link-dark text-decoration-none">
-                                    <i class="bi bi-twitter-x m-3"></i>
-                                    <b>X</b>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center align-self-center">
-                            <div class="col-12 m-2">
-                                <a href="#" class="link-dark text-decoration-none">
-                                    <i class="bi bi-linkedin m-3" style="color: #0077b5;"></i>
-                                    <b style="color: #0077b5;">Linkedin</b>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center align-self-center">
-                            <div class="col-12 m-2">
-                                <a href="https://github.com/shehazz" target="_blank" class="link-dark text-decoration-none">
-                                    <i class="bi bi-github m-3"></i>
-                                    <b>Github</b>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--
-                        CONTACT FORM: GitHub Pages can't run PHP/mail, so this posts to Formspree
-                        (a free service that emails form submissions to you).
-                        Setup: go to https://formspree.io, sign up free, create a form,
-                        then replace YOUR_FORM_ID below with the ID they give you.
-                    -->
-                    <div class="col-lg-8 col-md-8">
-                        <div id="formStatus" class="alert alert-success d-none"></div>
-                        <form class="row g-3" id="contactForm" name="form1" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                            <div class="col-lg-6 col-md-6">
-                                <label for="email" class="form-label">Valid Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Valid Email" onblur="email_validation()" oninput="email_validation()" required>
-                                <span id="iemailerror"></span>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name" onblur="name_validation()" oninput="name_validation()" required>
-                                <span id="inameerror"></span>
-                            </div>
-                            <div class="col-12">
-                                <label for="subj" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subj" name="subj" placeholder="Enter Subject" onblur="subj_validation()" oninput="subj_validation()" required>
-                                <span id="isubjerror"></span>
-                            </div>
-                            <div class="col-12">
-                                <label for="msg" class="form-label">Message</label>
-                                <textarea rows="5" class="form-control" id="msg" name="msg" placeholder="Enter Your Message" onblur="msg_validation()" oninput="msg_validation()" required></textarea>
-                                <span id="imsgerror"></span>
-                            </div>
-
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-dark">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="footer mt-5 py-3 bg-light border-top border-secondary border-1">
-            <div class="container text-center">
-                <p>
-                    <a href="https://www.instagram.com/shehazz_me/" target="_blank" class="link-dark"><i class="bi bi-instagram m-2"></i></a>
-                    <a href="https://web.facebook.com/amodh.kushan.7/" target="_blank" class="link-dark"><i class="bi bi-facebook m-2"></i></a>
-                    <a href="https://x.com/maticdrops" target="_blank" class="link-dark"><i class="bi bi-twitter-x m-2"></i></a>
-                    <a href="#" class="link-dark"><i class="bi bi-linkedin m-2"></i></a>
-                    <a href="https://github.com/shehazz" target="_blank" class="link-dark"><i class="bi bi-github m-2"></i></a>
-                </p>
-
-                <span class="text-muted">Designed &amp; Developed by Amodh Kushan</span><br>
-                <span class="text-muted">© 2026 All Rights Reserved</span>
-            </div>
-        </footer>
-
+<!-- NAV -->
+<nav class="site-nav">
+    <div class="container-narrow">
+        <a class="brand" href="#top"><img src="assets/images/logo.png" alt="Logo">Amodh<span class="dot">.</span>dev</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
     </div>
+</nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/validation.js"></script>
-    <script>
-        // Submit contact form via fetch so we can show an inline success message
-        // instead of redirecting to Formspree's page.
-        const contactForm = document.getElementById('contactForm');
-        const formStatus = document.getElementById('formStatus');
+<!-- HERO -->
+<header class="hero" id="top">
+    <div class="container-narrow hero-grid">
+        <div>
+            <p class="eyebrow">portfolio</p>
+            <h1>Full Stack<br><span>Developer</span></h1>
+            <p class="lede">I design and build clean, scalable software — from database schema to the pixel on screen.</p>
+            <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+            </div>
+            <div class="btn-row">
+                <a href="#projects" class="btn btn-primary">View projects →</a>
+                <a href="#contact" class="btn btn-ghost">Get in touch</a>
+            </div>
+        </div>
 
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const data = new FormData(contactForm);
+        <div class="terminal">
+            <div class="terminal-bar">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">amodh@portfolio: ~</span>
+            </div>
+            <div class="terminal-body" id="termBody"></div>
+        </div>
+    </div>
+</header>
 
-            fetch(contactForm.action, {
-                method: 'POST',
-                body: data,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    formStatus.textContent = 'Message sent successfully!';
-                    formStatus.classList.remove('d-none', 'alert-danger');
-                    formStatus.classList.add('alert-success');
-                    contactForm.reset();
-                } else {
-                    formStatus.textContent = 'Something went wrong. Please try again.';
-                    formStatus.classList.remove('d-none', 'alert-success');
-                    formStatus.classList.add('alert-danger');
-                }
-            }).catch(() => {
-                formStatus.textContent = 'Something went wrong. Please try again.';
-                formStatus.classList.remove('d-none', 'alert-success');
-                formStatus.classList.add('alert-danger');
-            });
-        });
-    </script>
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="container-narrow">
+        <div class="section-head">
+            <p class="eyebrow">about me</p>
+            <h2>The person behind the code</h2>
+        </div>
 
+        <div class="about-grid">
+            <div class="profile-frame">
+                <img src="assets/images/profilepic.png" alt="Amodh Kushan">
+            </div>
+
+            <div class="about-copy">
+                <!-- EDIT ME: replace with your real bio -->
+                <p>I'm a full stack developer who enjoys turning ideas into working software — from the database layer up through a clean, usable interface. I like projects that make me learn something new, and I care about writing code that's easy for the next person (often future me) to pick up.</p>
+                <p>Outside of client and personal projects, I spend time exploring new frameworks, refining my workflow, and occasionally breaking my own local server trying something experimental.</p>
+
+                <div class="stat-row">
+                    <div class="stat"><b>10+</b><span>projects shipped</span></div>
+                    <div class="stat"><b>5+</b><span>technologies</span></div>
+                    <div class="stat"><b>2+</b><span>years coding</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills" style="background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="container-narrow">
+        <div class="section-head">
+            <p class="eyebrow">skills</p>
+            <h2>Tools I reach for</h2>
+        </div>
+
+        <div class="skills-panel">
+            <div class="terminal-bar">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">package.json</span>
+            </div>
+            <div class="skills-body">
+                <!-- EDIT ME: adjust groups/chips to match your real stack -->
+                <div class="skill-group">
+                    <h4 data-key="frontend">frontend</h4>
+                    <div class="chip-row">
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4 data-key="backend">backend</h4>
+                    <div class="chip-row">
+                        <span class="chip">PHP</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4 data-key="tools">tools</h4>
+                    <div class="chip-row">
+                        <span class="chip">Git & GitHub</span>
+                        <span class="chip">VS Code</span>
+                        <span class="chip">Composer</span>
+                        <span class="chip">Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+    <div class="container-narrow">
+        <div class="section-head">
+            <p class="eyebrow">experience</p>
+            <h2>Where I've built things</h2>
+        </div>
+
+        <!-- EDIT ME: replace with your real timeline -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-year">2025 — Present</span>
+                <h4>Freelance Full Stack Developer</h4>
+                <p>Designing and building web applications for clients, covering everything from database schema to deployment.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-year">2024</span>
+                <h4>Backend & Database Projects</h4>
+                <p>Built PHP/MySQL-driven systems including admin dashboards, CRUD apps, and dynamic content management.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-year">2023</span>
+                <h4>Started Web Development</h4>
+                <p>Began learning HTML, CSS, and JavaScript, then moved into server-side development with PHP.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects" style="background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="container-narrow">
+        <div class="section-head">
+            <p class="eyebrow">projects</p>
+            <h2>Selected work</h2>
+        </div>
+
+        <!-- EDIT ME: replace these 3 placeholder projects with your real ones -->
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="file-tab"><span class="dot"></span>project-one.php</div>
+                <img src="assets/images/caroimg1.png" alt="Project One">
+                <div class="project-body">
+                    <h4>Project Title One</h4>
+                    <p class="project-cat">Web Application</p>
+                    <p>Short description of this project. Replace with what it does, the stack used, and your role.</p>
+                    <a href="#" class="btn btn-ghost-light">View details →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="file-tab"><span class="dot"></span>project-two.php</div>
+                <img src="assets/images/caroimg2.png" alt="Project Two">
+                <div class="project-body">
+                    <h4>Project Title Two</h4>
+                    <p class="project-cat">Web Application</p>
+                    <p>Short description of this project. Replace with what it does, the stack used, and your role.</p>
+                    <a href="#" class="btn btn-ghost-light">View details →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="file-tab"><span class="dot"></span>project-three.php</div>
+                <img src="assets/images/caroimg3.png" alt="Project Three">
+                <div class="project-body">
+                    <h4>Project Title Three</h4>
+                    <p class="project-cat">Web Application</p>
+                    <p>Short description of this project. Replace with what it does, the stack used, and your role.</p>
+                    <a href="#" class="btn btn-ghost-light">View details →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <div class="container-narrow">
+        <div class="contact-wrap">
+            <div>
+                <p class="eyebrow">contact</p>
+                <h2>Let's build something.</h2>
+                <p style="color:var(--on-dark-muted); margin-top:1rem; max-width:40ch;">Have a project, collaboration, or question? Reach out below or find me on socials.</p>
+
+                <!-- EDIT ME: update with your real contact details -->
+                <ul class="contact-list">
+                    <li><i class="bi bi-envelope"></i> hello@amodhkushan.io</li>
+                    <li><i class="bi bi-geo-alt"></i> Sri Lanka</li>
+                </ul>
+
+                <div class="social-row">
+                    <a href="https://www.instagram.com/shehazz_me/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://web.facebook.com/amodh.kushan.7/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/maticdrops" target="_blank" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://github.com/shehazz" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <!--
+                    Posts to Formspree since GitHub Pages can't run a server-side mailer.
+                    Sign up free at https://formspree.io, create a form, and replace
+                    YOUR_FORM_ID below with the ID it gives you.
+                -->
+                <div id="formStatus" class="d-none"></div>
+                <form id="contactForm" action="https://formspree.io/f/xvzepwla" method="POST">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="subj">Subject</label>
+                        <input type="text" id="subj" name="subj" placeholder="Project inquiry" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="msg" rows="4" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    Designed &amp; developed by Amodh Kushan · © 2026 All rights reserved
+</footer>
+
+<script src="assets/js/app.js"></script>
 </body>
-
 </html>

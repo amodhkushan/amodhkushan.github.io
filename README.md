@@ -1,39 +1,38 @@
-# Portfolio (Static Version)
+# Amodh Kushan — Portfolio (Static, GitHub Pages-ready)
 
-This is a static (HTML/CSS/JS only) version of your portfolio, converted from the
-original PHP + MySQL project so it can be hosted on **GitHub Pages**.
+A single-page developer portfolio styled like a code editor / terminal —
+built as plain HTML/CSS/JS so it can be hosted directly on GitHub Pages
+(no PHP, no database, no build step).
 
-## What changed from the original PHP version
+## Design
 
-- **No PHP, no database.** GitHub Pages only serves static files — it cannot run
-  PHP or connect to MySQL, so the original `Config/DBConnection.php`, admin login,
-  and "add project" dashboard could never work there. Those files are not included.
-- **Projects are now hardcoded** in `index.html` (see the `<!-- EDIT ME -->` comment
-  in the Projects section). There were no projects in your database export, so I
-  added 3 placeholder cards — replace the image, title, category, and description
-  for each real project, and duplicate the `col-md-4` block for more.
-- **Contact form** now submits to [Formspree](https://formspree.io) (free tier)
-  instead of PHPMailer, since there's no server to send email from.
-  1. Go to https://formspree.io and sign up (free).
-  2. Create a new form, and copy the form endpoint it gives you
-     (looks like `https://formspree.io/f/abcd1234`).
-  3. In `index.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"` and
-     replace `YOUR_FORM_ID` with your real ID.
-- **Services section** was empty in the original source, so I added three simple
-  placeholder service cards — edit or remove them as you like.
+- **Hero**: dark terminal window with a typed intro (`whoami`, focus, status).
+- **About**: profile photo + bio + quick stats.
+- **Skills**: styled like a `package.json` file, grouped by frontend/backend/tools.
+- **Experience**: a timeline of roles/milestones.
+- **Projects**: cards styled like open file tabs in an editor.
+- **Contact**: dark panel with socials + a working contact form (via Formspree).
 
-## How to deploy to GitHub Pages
+Fonts: Space Grotesk (headings), Inter (body), JetBrains Mono (labels/terminal).
 
-1. Create a new GitHub repository (e.g. `amodhkushan.github.io` if you want it at
-   the root of your GitHub Pages, or any name if you're only using a custom domain).
-2. Push all the files in this folder to that repo (including `.nojekyll` and `CNAME`).
-3. In the repo, go to **Settings → Pages**, set the source to the `main` branch
-   (root), and save.
-4. **Custom domain (amodhkushan.io):** A `CNAME` file is already included with
-   `amodhkushan.io` in it. At your domain registrar, point your domain's DNS to
-   GitHub Pages (an `A` record to GitHub's IPs, or a `CNAME` record if using a
-   subdomain) — see GitHub's guide: 
-   https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
+## What you need to edit before publishing
+
+Everything editable is marked with an `<!-- EDIT ME -->` comment in `index.html`:
+
+1. **About Me bio** — replace the placeholder paragraphs with your real bio.
+2. **Skills** — adjust the chips under `frontend` / `backend` / `tools` to match your real stack.
+3. **Experience timeline** — replace the 3 placeholder entries with your real history.
+4. **Projects** — replace the 3 placeholder cards with your real projects (title, category, description, image). Duplicate a `.project-card` block for more.
+5. **Contact details** — update the email and location in the contact list.
+6. **Contact form** — sign up free at https://formspree.io, create a form, and replace `YOUR_FORM_ID` in the form's `action` attribute with your real form ID.
+
+## Deploying to GitHub Pages
+
+1. Create a GitHub repo (e.g. `amodhkushan.github.io`, or any name if only using the custom domain).
+2. Push all files here, including the hidden `.nojekyll` and `CNAME`.
+3. Repo → **Settings → Pages** → set source to the `main` branch (root).
+4. `CNAME` is pre-filled with `amodhkushan.io`. Point your domain's DNS at GitHub Pages
+   (see https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
 5. Wait a few minutes for DNS/Pages to propagate, then visit your site.
 
 ## Editing locally
