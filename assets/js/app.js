@@ -4,6 +4,27 @@ const navLinks = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('page-loaded');
+
+    const revealElements = document.querySelectorAll(
+        '.section-head, .about-grid, .skills-panel, .timeline-item, .project-card, .contact-wrap, .hero .hero-grid, .terminal, .contact-list li, .social-row a'
+    );
+
+    revealElements.forEach(el => el.classList.add('scroll-reveal'));
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+});
+
 // Terminal typing effect
 const lines = [
     { prompt: '$', text: 'whoami', delay: 40 },
